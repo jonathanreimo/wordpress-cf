@@ -4030,7 +4030,7 @@ msgstr "Lo sentimos, este navegador no soporta la geolocalización"
 #: partials/search-form.php:59 templates/explore/partials/sidebar.php:72
 #: templates/explore/partials/sidebar.php:93
 msgid "Search"
-msgstr "Busque en"
+msgstr "Buscar"
 
 #: includes/extensions/advanced-custom-fields/plugin/includes/fields/class-acf-field-google-map.php:156
 msgid "Clear location"
