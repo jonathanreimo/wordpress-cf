@@ -236,6 +236,7 @@ if ($data['scroll_border_color']) {
 
 					</div>
 				<?php else: ?>
+					<?php if ( is_user_logged_in() ): $current_user = wp_get_current_user(); ?>
 					<div class="user-area signin-area">
 						<i class="mi person user-area-icon"></i>
 						<a href="<?php echo esc_url( \MyListing\get_login_url() ) ?>">
@@ -251,6 +252,7 @@ if ($data['scroll_border_color']) {
 					<div class="mob-sign-in">
 						<a href="<?php echo esc_url( \MyListing\get_login_url() ) ?>"><i class="mi person"></i></a>
 					</div>
+					<?php endif ?>
 
 					<?php if ( c27()->get_setting( 'header_show_cart', true ) !== false ): ?>
 						<?php c27()->get_partial( 'header-cart' ) ?>
